@@ -1,0 +1,53 @@
+<!--
+Tamar Foster
+Assignment 2
+02/28/2024
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<!--Sets this fragment as being the one initially shown-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:startDestination="SplashScreen"
+    tools:context=".SplashScreen"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/instructionsText"
+            android:layout_width="256dp"
+            android:layout_height="128dp"
+            android:text="HOW TO PLAY: select a space to place your piece; your opponent will do the same. Having a line of four pieces grants you a win!"
+            app:layout_constraintBottom_toTopOf="@+id/playButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:layout_marginTop="512dp"
+            android:layout_marginBottom="24dp"
+            android:text="Play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="735dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
